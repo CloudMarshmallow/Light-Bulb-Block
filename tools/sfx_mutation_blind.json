@@ -1,0 +1,12 @@
+{
+  "wave": "noise",
+  "attack": 0.06,
+  "decay": 0.12,
+  "sustain": 0.08,
+  "sustain_level": 0.55,
+  "release": 0.32,
+  "lowpass": 700.0,
+  "lowpass_sweep": 0.5,
+  "highpass": 180.0,
+  "punch": 0.2
+}

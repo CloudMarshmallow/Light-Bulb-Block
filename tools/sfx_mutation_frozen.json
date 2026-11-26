@@ -1,0 +1,13 @@
+{
+  "wave": "sine",
+  "freq_start": 1318.5,
+  "freq_end": 1760.0,
+  "attack": 0.002,
+  "decay": 0.10,
+  "sustain": 0.04,
+  "sustain_level": 0.7,
+  "release": 0.30,
+  "arpeggio": [{"at": 0.28, "semitones": 7}],
+  "noise_level": 0.10,
+  "highpass": 700.0
+}

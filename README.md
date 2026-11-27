@@ -176,40 +176,6 @@
 
 ---
 
-## 开发与测试
-
-```powershell
-$godot = "Godot.exe"
-$game  = "本目录"
-
-# 单元测试（求解器 / 关卡计划 / 皮肤 / 登录逻辑 / 时间工具）
-& $godot --headless --path $game --script res://tests/test_engine.gd   # 期望 FAILURES=0
-
-# 自动演示（常规+每日全部关卡自动最优解）
-& $godot --headless --path $game -- --auto-demo                        # 期望 AUTO_DEMO_DONE fails=0
-
-# 界面端到端测试
-& $godot --headless --path $game -- --ui-test                          # 期望 UI_TEST_RESULT fails=0
-
-# 素材重新生成（可选）
-& $godot --headless --path $game --script res://tools/gen_icons.gd
-& $godot --headless --path $game --script res://tools/pixelate_bg.gd
-```
-
----
-
-## 云存档配置（可选）
-
-项目已内置 `auth_config.json`，开箱即用。若需换成自己的 Supabase 项目：
-
-1. 执行 `docs/CLOUD_SAVE.sql` 建表与 RLS；
-2. 修改 `auth_config.json` 里的 `url` 和 `anon_key`（**只能用 publishable/anon key，不能用 secret/service_role key**）；
-3. 重新导出。
-
-详细流程见 [`docs/SUPABASE_SETUP.md`](docs/SUPABASE_SETUP.md)、[`docs/SAVE_DATA.md`](docs/SAVE_DATA.md)、[`docs/AUTH_PLAN.md`](docs/AUTH_PLAN.md)。
-
----
-
 ## 素材授权
 
 - 游戏图标：game-icons.net "light-bulb"（CC BY 3.0）+ 程序合成背景
@@ -218,12 +184,3 @@ $game  = "本目录"
 - 背景图：项目方提供并程序像素化；其余图标、音效、BGM 均为程序生成
 
 完整清单见 `art/ICON_CREDITS.md`。
-
----
-
-## 已知限制
-
-1. **未做代码签名**：首次运行 Windows SmartScreen 会提示，点「更多信息 → 仍要运行」即可。
-2. **每日挑战依赖网络时间**：时间服务不可达时该模式被拦截（常规挑战不受影响）。
-3. **云同步并发**：极短时间内多次改动可能跳过当次自动上传，下一次保存会补传。
-4. **历史记录上限 20 条**。

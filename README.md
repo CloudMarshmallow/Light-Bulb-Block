@@ -6,12 +6,12 @@
 > **下载压缩包 → 解压 → 双击 `灯泡方块.exe` 即可游玩。**
 
 <p align="center">
-  <a href="https://github.com/CloudMarshmallow/Light-Bulb-Block/releases/latest/download/LightBlocks-v6.1-Windows-x64.zip">
-    <img src="https://img.shields.io/badge/Download-Windows%20x64%20v6.1-2ea043?style=for-the-badge&logo=windows&logoColor=white" alt="Download Windows x64 v6.1">
+  <a href="https://github.com/CloudMarshmallow/Light-Bulb-Block/releases">
+    <img src="https://img.shields.io/badge/Download-Windows%20x64-2ea043?style=for-the-badge&logo=windows&logoColor=white" alt="Download Windows x64">
   </a>
 </p>
 
-**[⬇️ 点此直接下载最新压缩包（Windows 64 位）](https://github.com/CloudMarshmallow/Light-Bulb-Block/releases/latest/download/LightBlocks-v6.1-Windows-x64.zip)**
+**[⬇️ 前往 Releases 页面下载压缩包（Windows 64 位）](https://github.com/CloudMarshmallow/Light-Bulb-Block/releases)**
 
 ---
 
@@ -137,13 +137,15 @@
 
 ## 下载与安装
 
-### ⬇️ 一键下载
+### ⬇️ 下载
 
-**直接下载最新版本（Windows 64 位）：**
+**到 GitHub Releases 页面下载最新压缩包（Windows 64 位）：**
 
-> **https://github.com/CloudMarshmallow/Light-Bulb-Block/releases/latest/download/LightBlocks-v6.1-Windows-x64.zip**
+> **https://github.com/CloudMarshmallow/Light-Bulb-Block/releases**
 
-点上面的链接即可直接下载压缩包，无需进入 Releases 页面。
+1. 打开上面的 Releases 页面；
+2. 在最新版本下方点 **Assets** 展开；
+3. 点击 `LightBlocks-vX.X-Windows-x64.zip` 开始下载。
 
 ### 安装步骤
 

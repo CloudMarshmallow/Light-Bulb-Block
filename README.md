@@ -3,7 +3,15 @@
 一款像素风格的点灯解谜小游戏：点一下方块，它和上下左右四格一起翻转亮灭，把整盘灯全部点亮即可过关。
 
 > 使用 **Godot 4.7.2** + **GDScript** 开发，Windows 桌面版，单文件发布。
-> 下载压缩包 → 解压 → 双击 `灯泡方块.exe` 即可游玩。
+> **下载压缩包 → 解压 → 双击 `灯泡方块.exe` 即可游玩。**
+
+<p align="center">
+  <a href="https://github.com/CloudMarshmallow/Light-Bulb-Block/releases/latest/download/LightBlocks-v6.1-Windows-x64.zip">
+    <img src="https://img.shields.io/badge/Download-Windows%20x64%20v6.1-2ea043?style=for-the-badge&logo=windows&logoColor=white" alt="Download Windows x64 v6.1">
+  </a>
+</p>
+
+**[⬇️ 点此直接下载最新压缩包（Windows 64 位）](https://github.com/CloudMarshmallow/Light-Bulb-Block/releases/latest/download/LightBlocks-v6.1-Windows-x64.zip)**
 
 ---
 
@@ -129,10 +137,18 @@
 
 ## 下载与安装
 
-### 方式一：直接运行打包版（推荐）
+### ⬇️ 一键下载
 
-1. 到 **Releases** 页面下载最新压缩包（`灯泡方块-vX.X-Windows-x64.zip`）；
-2. 解压到任意文件夹；
+**直接下载最新版本（Windows 64 位）：**
+
+> **https://github.com/CloudMarshmallow/Light-Bulb-Block/releases/latest/download/LightBlocks-v6.1-Windows-x64.zip**
+
+点上面的链接即可直接下载压缩包，无需进入 Releases 页面。
+
+### 安装步骤
+
+1. **下载压缩包**（`LightBlocks-vX.X-Windows-x64.zip`）；
+2. **解压**到任意文件夹（整个文件夹解压，不要只拖出 exe）；
 3. 双击 **`灯泡方块.exe`** 即可开始游戏（单文件，已内嵌全部资源与账号配置）；
 4. 无需安装，无需管理员权限；存档自动保存在本机用户目录。
 
@@ -147,26 +163,6 @@
 | 内存 | 2 GB |
 | 磁盘 | 约 110 MB |
 | 网络 | 可选（仅每日挑战与云存档需要） |
-
-### 方式二：用 Godot 打开工程运行
-
-适合需要修改或二次开发：
-
-1. 安装 **Godot 4.7.2**（标准版，无需 .NET）；
-2. 打开 Godot → 「导入」→ 选择本目录下的 `project.godot`；
-3. 按 **F5** 运行；或命令行：
-
-```powershell
-Godot.exe --path "灯泡方块"
-```
-
-### 方式三：自行导出
-
-```powershell
-# 需先安装 Godot 4.7.2 导出模板
-& Godot.exe --headless --path . --import
-& Godot.exe --headless --path . --export-release "Windows Desktop" "build/windows/灯泡方块.exe"
-```
 
 ### 存档位置
 
